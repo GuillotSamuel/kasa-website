@@ -1,9 +1,15 @@
 import React from 'react'
+import Mountains from './background/mountains.png'
 
 export default function APropos() {
   return (
-    <div>
-        <h1>A propos</h1>
-    </div>
+    <main>
+      <section id="aProposPicture">
+        <img src={Mountains} alt="Mountains landscape" />
+      </section>
+      <section>
+        <div>FIablité</div>
+      </section>
+    </main>
   )
 }
