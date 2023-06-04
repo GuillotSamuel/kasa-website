@@ -8,7 +8,10 @@ export default function APropos() {
         <img src={Mountains} alt="Mountains landscape" />
       </section>
       <section>
-        <div>FIablité</div>
+        <div>Fiabilité</div>
+        <div>Respect</div>
+        <div>Service</div>
+        <div>Sécurité</div>
       </section>
     </main>
   )
