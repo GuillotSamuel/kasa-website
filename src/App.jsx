@@ -4,8 +4,8 @@ import Home from "./pages/home/Home"
 import FicheLogement from "./pages/ficheLogement/FicheLogement"
 import APropos from "./pages/aPropos/APropos"
 import Erreur from "./pages/erreur/Erreur"
-import Navbar from "./components/navbar/Navbar"
-import Footer from "./components/footer/Footer"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 function App() {
   return (
