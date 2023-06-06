@@ -3,6 +3,7 @@ import LetterK from '../assets/footerLogo/letterKFooter.png'
 import KasaLogo from '../assets/footerLogo/kasaLogoFooter.png'
 import LetterS from '../assets/footerLogo/letterSFooter.png'
 import LetterA from '../assets/footerLogo/letterAFooter.png'
+import '../styles/footer.css'
 
 export default function Footer() {
   return (

@@ -1,8 +1,28 @@
+@import './general.scss';
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 45px 0px 50px;
 }
 
-Link {
+#imageMarginSmall {
+margin-right: 5px;
+}
+
+#imageMarginTall {
+    margin-right: 11px;
+}
+
+#navigationButton {
+    display: flex;
+    gap: 57px;
+}
+
+#linkButton {
+    color: $main-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
 }

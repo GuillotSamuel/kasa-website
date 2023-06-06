@@ -10,14 +10,14 @@ export default function Navbar() {
   return (
     <header>
       <div id="headerLogo">
-        <img src={LetterK} alt="K" />
-        <img src={KasaLogo} alt="A" />
-        <img src={LetterS} alt="S" />
+        <img src={LetterK} alt="K" id="imageMarginSmall"/>
+        <img src={KasaLogo} alt="A" id="imageMarginTall"/>
+        <img src={LetterS} alt="S" id="imageMarginTall"/>
         <img src={LetterA} alt="A" />
       </div>
       <nav id="navigationButton">
-          <Link to="/">Accueil</Link>
-          <Link to="/aPropos">A propos</Link>
+          <Link to="/" id="linkButton">Accueil</Link>
+          <Link to="/aPropos" id="linkButton">A propos</Link>
       </nav>
     </header>
   )
