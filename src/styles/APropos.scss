@@ -1,0 +1,31 @@
+@import './general.scss';
+
+#imageSection {
+    width: 100%;
+}
+
+#aProposSection {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 38px;
+    margin-bottom: 38px;
+}
+
+.aProposContainer {
+    background-color: $main-color;
+    border-radius: 5px;
+    width: 1023px;
+    height: 52px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+
+.aProposTitle {
+    color: white;
+    font-weight: 500;
+    font-size: 24px;
+}

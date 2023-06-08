@@ -1,1 +1,62 @@
-/*# sourceMappingURL=Erreur.css.map */
+.supperpositionContainer {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 223px;
+}
+
+.titleOverlay {
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 48px;
+  top: 50%;
+  left: 50%;
+}
+
+.sectionIllustration {
+  position: absolute;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.illustrationOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  opacity: 0.3;
+  background-color: black;
+}
+
+main {
+  color: #FF6060;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#error404 {
+  font-weight: 700;
+  font-size: 288px;
+  margin-top: 89px;
+  margin-bottom: 139px;
+}
+
+#errorMessage {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 139px;
+}
+
+#homepageRedirectionLink {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 139px;
+  color: #FF6060;
+}/*# sourceMappingURL=Erreur.css.map */

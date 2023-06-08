@@ -1,0 +1,28 @@
+@import './general.scss';
+
+main {
+    color: $main-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#error404 {
+    font-weight: 700;
+    font-size: 288px;
+    margin-top: 89px;
+    margin-bottom: 139px;
+}
+
+#errorMessage {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 139px;
+}
+
+#homepageRedirectionLink {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 139px;
+    color: $main-color;
+}
