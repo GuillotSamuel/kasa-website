@@ -5,6 +5,8 @@
 }
 
 .titleOverlay {
+  width: 100%;
+  height: 100%;
   position: absolute;
   color: white;
   z-index: 1;
@@ -12,6 +14,9 @@
   font-size: 48px;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
 }
 
 .sectionIllustration {
@@ -34,6 +39,18 @@
   background-color: black;
 }
 
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
 #imageSection {
   width: 100%;
 }
@@ -49,13 +66,14 @@
 .aProposContainer {
   background-color: #FF6060;
   border-radius: 5px;
-  width: 1023px;
+  width: 100% px;
   height: 52px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding-left: 15px;
   padding-right: 20px;
+  justify-content: flex-end;
 }
 
 .aProposTitle {

@@ -15,13 +15,14 @@
 .aProposContainer {
     background-color: $main-color;
     border-radius: 5px;
-    width: 1023px;
+    width: 100%px;
     height: 52px;
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-left: 15px;
     padding-right: 20px;
+    justify-content: flex-end;
 }
 
 .aProposTitle {

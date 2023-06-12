@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <main>
       <section id="sloganSection" className="supperpositionContainer">
-        <h1 id="homeTitle" className="titleOverlay">Chez vous, partout et ailleurs</h1>
         <img src={Coast} alt="Coast landscape" className="sectionIllustration"/>
         <div className="illustrationOverlay"></div>
+        <h1 id="homeTitle" className="titleOverlay">Chez vous, partout et ailleurs</h1>
       </section>
       <section id="rentalCardsSection">
         <Api />

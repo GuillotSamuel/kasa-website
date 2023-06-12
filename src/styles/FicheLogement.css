@@ -1,1 +1,147 @@
-/*# sourceMappingURL=FicheLogement.css.map */
+.supperpositionContainer {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 223px;
+}
+
+.titleOverlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  color: white;
+  z-index: 1;
+  font-weight: 500;
+  font-size: 48px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
+}
+
+.sectionIllustration {
+  position: absolute;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.illustrationOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 223px;
+  border-radius: 25px;
+  opacity: 0.3;
+  background-color: black;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
+.logementCarrousel {
+  width: 100%;
+}
+
+.carrouselImage {
+  width: 100%;
+  border-radius: 25px;
+  aspect-ratio: 3/1;
+}
+
+#mainLogementContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  margin-top: 24px;
+}
+
+#secondLogementContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  justify-content: flex-end;
+}
+
+#hostContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+#hostPicture {
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+}
+
+#ratingContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.stars {
+  color: #E3E3E3;
+}
+
+.logementTags {
+  width: 115px;
+  height: 25px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 20px;
+  background-color: #FF6060;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#informationsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 6%;
+  margin-bottom: 50px;
+}
+
+.informationsElement {
+  width: 47%;
+}
+
+.informationsElementContainer {
+  background-color: #FF6060;
+  width: 100%;
+  height: 52px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logementInformationsTitle {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.openingButton {
+  color: white;
+  border: none;
+  background-color: transparent;
+}/*# sourceMappingURL=FicheLogement.css.map */

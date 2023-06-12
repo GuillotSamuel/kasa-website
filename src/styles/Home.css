@@ -5,6 +5,8 @@
 }
 
 .titleOverlay {
+  width: 100%;
+  height: 100%;
   position: absolute;
   color: white;
   z-index: 1;
@@ -12,6 +14,9 @@
   font-size: 48px;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  justify-content: center;
 }
 
 .sectionIllustration {
@@ -34,6 +39,18 @@
   background-color: black;
 }
 
+h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #FF6060;
+}
+
 #sloganSection {
   width: 100%;
 }
@@ -54,6 +71,7 @@
 
 .logementCard {
   aspect-ratio: 1/1;
+  position: relative;
 }
 
 .logementImage {
@@ -62,4 +80,23 @@
   border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.logementOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.logementTitle {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
 }/*# sourceMappingURL=Home.css.map */

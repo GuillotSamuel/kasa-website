@@ -6,40 +6,58 @@ export default function FicheLogement() {
 
 const logementId = 'c67ab8a7';
 
-
 const logementTrouve = Logements.find(obj => obj.id === logementId);
 const hostTrouve = logementTrouve.host;
 
   return (
     <div>
+      <div className='logementCarrousel'>
+        <button className="carrouselButton previous"><i className="fa-solid fa-angle-right fa-rotate-180"></i></button>
+        <button className="carrouselButton next"><i className="fa-solid fa-angle-right"></i></button>
+        <ul>
+        {logementTrouve.pictures.map((picture, index) => (
+          <li className="logementSlide">
+            <img key={index} src={picture} alt={`Image ${index + 1}`} className={`carrouselImage #${index + 1}`}/>
 
-{logementTrouve.pictures.map((picture, index) => (
-        <img key={index} src={picture} alt={`Image ${index + 1}`} />
-      ))}      <div id="firstContainer">
-        <h1 id="logementTitle-2">{logementTrouve.title}</h1>
-        <h2 id="logementLocation">{hostTrouve.location}</h2>
-        <div className="logementTags">{hostTrouve.tags}</div>
+          </li>
+        ))}      
+        </ul>
       </div>
-      <div id="secondContainer">
-        <div id="hostContainer">
-          <div id="hostName">{hostTrouve.name}</div>
-          <img src={hostTrouve.picture} alt="Photo de l'host"></img>
+     
+      <div id="mainLogementContainer">
+        <div id="firstLogementContainer">
+          <h1 id="logementTitle-2">{logementTrouve.title}</h1>
+          <h2 id="logementLocation">{logementTrouve.location}</h2>
+          <div className="logementTags">{logementTrouve.tags}</div>
         </div>
-        <div id="ratingContainer">
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
-          <i className="fa-solid fa-star"></i>
+        <div id="secondLogementContainer">
+          <div id="hostContainer">
+            <h2 id="hostName">{hostTrouve.name}</h2>
+            <img src={hostTrouve.picture} alt="Photo de l'host" id="hostPicture"></img>
+          </div>
+          <div id="ratingContainer">
+            <i className="fa-solid fa-star stars" id="star1"></i>
+            <i className="fa-solid fa-star stars" id="star2"></i>
+            <i className="fa-solid fa-star stars" id="star3"></i>
+            <i className="fa-solid fa-star stars" id="star4"></i>
+            <i className="fa-solid fa-star stars" id="star5"></i>
+          </div>
         </div>
       </div>
-      <div className="informationsContainer">
-        <div id="descriptionContainer">
-          <h3 id="logementDescritionTitle">Descrition</h3>
+
+      <div id="informationsContainer">
+        <div className="informationsElement">
+          <div className="informationsElementContainer">
+            <h3 className="logementInformationsTitle">Description</h3>
+            <button className="openingButtonDescrition openingButton"><i className="fa-solid fa-angle-right fa-rotate-270 fa-xl"></i></button>
+          </div>
           <div id="logementDescription">{logementTrouve.description}</div>
         </div>
-        <div id="equipementsContainer">
-          <h3 id="logementEquipementsTitle">Équipements</h3>
+        <div className="informationsElement">
+          <div className="informationsElementContainer">
+            <h3 className="logementInformationsTitle">Équipements</h3>
+            <button className="openingButtonDescrition openingButton"><i className="fa-solid fa-angle-right fa-rotate-270 fa-xl"></i></button>
+          </div>
           <div id="logementEquipements">{logementTrouve.equipments}</div>
         </div>
       </div>

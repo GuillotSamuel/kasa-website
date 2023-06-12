@@ -5,9 +5,11 @@ import '../styles/Erreur.css'
 export default function erreur() {
   return (
     <main>
-      <h1 id="error404">404</h1>
-      <h2 id="errorMessage">Oups! La page que vous demandez n'existe pas.</h2>
-      <Link to="/" id="homepageRedirectionLink">Retourner sur la page d’accueil</Link>
+      <div id="error404">404</div>
+      <h1 id="errorMessage">Oups! La page que vous demandez n'existe pas.</h1>
+      <h3>
+        <Link to="/" id="homepageRedirectionLink">Retourner sur la page d’accueil</Link>
+      </h3>
     </main>
   )
 }
