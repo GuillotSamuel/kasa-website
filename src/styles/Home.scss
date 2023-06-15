@@ -48,4 +48,35 @@
     font-size: 18px;
     font-weight: 500;
     color: white;
+    padding-right: 40%;
+}
+
+@media (max-width: 768px) {
+
+#sloganSection {}
+
+#logementGrid {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+}
+
+#sloganSection {
+    margin-top: 27px;
+}
+
+#homeTitle {
+    font-size: 24px;
+}
+
+#rentalCardsSection{
+    margin: 22px 0px 27px;
+    background-color: white;
+    padding: 0px;
+}
+
+.logementCard {
+    aspect-ratio: 4 / 3;
+}
+
 }

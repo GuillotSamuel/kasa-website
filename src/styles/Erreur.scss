@@ -12,10 +12,14 @@ main {
     font-size: 288px;
     margin-top: 89px;
     margin-bottom: 139px;
+    width: 100%;
+    text-align: center;
 }
 
 #errorMessage {
     margin-bottom: 139px;
+    width: 100%;
+    text-align: center;
 }
 
 #homepageRedirectionLink {
@@ -23,4 +27,25 @@ main {
     font-weight: 500;
     margin-bottom: 139px;
     color: $main-color;
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+
+#error404 {
+    font-size: 96px;
+    margin-top: 113px;
+    margin-bottom: 113px
+}
+
+#error-message {
+    margin-bottom: 113px;
+    font-size: 18px;
+}
+
+#homepageRedirectionLink {
+    font-size: 14px;
+}
+
 }

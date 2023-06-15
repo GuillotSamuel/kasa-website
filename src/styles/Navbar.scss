@@ -7,11 +7,11 @@ header {
     margin: 45px 0px 50px;
 }
 
-#imageMarginSmall {
-margin-right: 5px;
+.imageMarginSmall {
+    margin-right: 5px;
 }
 
-#imageMarginTall {
+.imageMarginTall {
     margin-right: 11px;
 }
 
@@ -20,9 +20,47 @@ margin-right: 5px;
     gap: 57px;
 }
 
+.linkButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #linkButton {
     color: $main-color;
     text-decoration: none;
     font-weight: 500;
     font-size: 24px;
+}
+
+@media (max-width: 768px) {
+
+header {
+    margin: 20px 0px 0px;
+}
+
+#linkButton {
+    font-size: 12px;
+}
+
+#navigationButton {
+    gap: 26px;
+}
+
+.logoNavbarTall {
+    height: 43px;
+}
+
+.logoNavbarSmall {
+    height: 33px;
+}
+
+.imageMarginSmall {
+    margin-right: 4px;
+}
+
+.imageMarginTall {
+    margin-right: 8px;
+}
+
 }

@@ -6,17 +6,15 @@
 
 .titleOverlay {
   width: 100%;
-  height: 100%;
+  height: 111px;
   position: absolute;
   color: white;
   z-index: 1;
   font-weight: 500;
   font-size: 48px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
-  justify-content: center;
+  top: 50%;
+  transform: translate(0%, 35%);
 }
 
 .sectionIllustration {
@@ -51,6 +49,19 @@ h2 {
   color: #FF6060;
 }
 
+@media (max-width: 768px) {
+  .supperpositionContainer {
+    margin-bottom: 111px;
+  }
+  .sectionIllustration {
+    height: 111px;
+    border-radius: 10px;
+  }
+  .illustrationOverlay {
+    height: 111px;
+    border-radius: 10px;
+  }
+}
 header {
   display: flex;
   flex-direction: row;
@@ -58,11 +69,11 @@ header {
   margin: 45px 0px 50px;
 }
 
-#imageMarginSmall {
+.imageMarginSmall {
   margin-right: 5px;
 }
 
-#imageMarginTall {
+.imageMarginTall {
   margin-right: 11px;
 }
 
@@ -71,9 +82,39 @@ header {
   gap: 57px;
 }
 
+.linkButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #linkButton {
   color: #FF6060;
   text-decoration: none;
   font-weight: 500;
   font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin: 20px 0px 0px;
+  }
+  #linkButton {
+    font-size: 12px;
+  }
+  #navigationButton {
+    gap: 26px;
+  }
+  .logoNavbarTall {
+    height: 43px;
+  }
+  .logoNavbarSmall {
+    height: 33px;
+  }
+  .imageMarginSmall {
+    margin-right: 4px;
+  }
+  .imageMarginTall {
+    margin-right: 8px;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

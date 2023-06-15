@@ -2,7 +2,13 @@
 
 .logementCarrousel {
     width: 100%;
+    aspect-ratio: 3/1;
+    position: relative;
+}
 
+.logementSlide {
+    list-style-type: none;
+    position: absolute;
 }
 
 .carrouselImage {
@@ -94,5 +100,25 @@
     color: white;
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
 
+.informationDescription {
+    background-color: #f6f6f6;
+    color: $main-color;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    height: 0;
+    transition: transform 0.5s ease-in-out;
+}
+
+.rotate-animation {
+    transform: rotate(-180deg);
+}
+
+.expand {
+    height: auto;
+    padding: 20px;
 }

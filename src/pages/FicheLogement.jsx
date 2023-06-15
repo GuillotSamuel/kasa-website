@@ -1,11 +1,28 @@
 import React from 'react'
 import '../styles/FicheLogement.css'
 import Logements from '../assets/datas/logements.json';
+import { useParams } from 'react-router-dom';
 
 export default function FicheLogement() {
 
-const logementId = 'c67ab8a7';
+/* const [textVisibility, setTextVisibility] = useState({
+  button1: false,
+  button2: false,
+  button3: false,
+  button4: false
+});
 
+const toggleText = (buttonId) => {
+  setTextVisibility((prevVisibility) => ({
+    ...prevVisibility,
+    [buttonId]: !prevVisibility[buttonId]
+  }));
+}; */
+
+/* Récupération de l'id du logement dans le router */
+let { id } = useParams();
+const logementId = id;
+/* Récupération des données dans le JSON */
 const logementTrouve = Logements.find(obj => obj.id === logementId);
 const hostTrouve = logementTrouve.host;
 
@@ -51,14 +68,14 @@ const hostTrouve = logementTrouve.host;
             <h3 className="logementInformationsTitle">Description</h3>
             <button className="openingButtonDescrition openingButton"><i className="fa-solid fa-angle-right fa-rotate-270 fa-xl"></i></button>
           </div>
-          <div id="logementDescription">{logementTrouve.description}</div>
+          <div id="logementDescription" className='informationDescription'>{logementTrouve.description}</div>
         </div>
         <div className="informationsElement">
           <div className="informationsElementContainer">
             <h3 className="logementInformationsTitle">Équipements</h3>
             <button className="openingButtonDescrition openingButton"><i className="fa-solid fa-angle-right fa-rotate-270 fa-xl"></i></button>
           </div>
-          <div id="logementEquipements">{logementTrouve.equipments}</div>
+          <div id="logementEquipements" className='informationDescription'>{logementTrouve.equipments}</div>
         </div>
       </div>
     </div>
