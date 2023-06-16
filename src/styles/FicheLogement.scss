@@ -6,6 +6,12 @@
     position: relative;
 }
 
+#carouselContainer {
+    width: 100%;
+    aspect-ratio: 3/1;
+    position: relative;
+}
+
 .logementSlide {
     list-style-type: none;
     position: absolute;
@@ -15,6 +21,7 @@
     width: 100%;
     border-radius: 25px;
     aspect-ratio: 3/1;
+    object-fit: cover;
 }
 
 #mainLogementContainer {
@@ -45,80 +52,9 @@
     border-radius: 50%;
 }
 
-#ratingContainer {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-    justify-content: flex-end;
-}
-
-.stars {
-    color: $secondary-color;
-}
-
-.logementTags {
-    width: 115px;
-    height: 25px;
-    border-radius: 10px;
-    margin-right: 10px;
-    margin-top: 20px;
-    background-color: $main-color;
-    color: white;
-    font-size: 14px;
-    font-weight: 500;
-}
-
 #informationsContainer {
     display: flex;
     flex-direction: row;
     gap: 6%;
     margin-bottom: 50px;
-}
-
-.informationsElement {
-    width: 47%;
-}
-
-.informationsElementContainer {
-    background-color: $main-color;
-    width: 100%;
-    height: 52px;
-    border-radius: 10px;
-    padding: 10px 20px 10px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-.logementInformationsTitle {
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
-}
-
-.openingButton {
-    color: white;
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
-}
-
-.informationDescription {
-    background-color: #f6f6f6;
-    color: $main-color;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    overflow: hidden;
-    height: 0;
-    transition: transform 0.5s ease-in-out;
-}
-
-.rotate-animation {
-    transform: rotate(-180deg);
-}
-
-.expand {
-    height: auto;
-    padding: 20px;
 }

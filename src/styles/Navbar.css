@@ -49,6 +49,102 @@ h2 {
   color: #FF6060;
 }
 
+/* Dropdown */
+.dropdownContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdownBar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #FF6060;
+  border-radius: 5px;
+  height: 52px;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 20px;
+  align-items: center;
+}
+
+.dropdownTitle {
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.dropdownButton {
+  color: white;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdownText {
+  background-color: #f6f6f6;
+  color: #FF6060;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 20px;
+}
+
+.rotate-animation {
+  transform: rotate(-180deg);
+}
+
+/* Notation stars */
+#ratingContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  justify-content: flex-end;
+}
+
+.grayStar {
+  color: #E3E3E3;
+}
+
+.redStar {
+  color: #FF6060;
+}
+
+/* Tags */
+#tagsList {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.tagContainer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 30px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: #FF6060;
+  width: auto;
+  min-width: 115px;
+}
+
+.logementTags {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Equipements */
+#equipementsListe {
+  list-style: none;
+}
+
+/* Responsive */
 @media (max-width: 768px) {
   .supperpositionContainer {
     margin-bottom: 111px;
@@ -90,9 +186,16 @@ header {
 
 #linkButton {
   color: #FF6060;
-  text-decoration: none;
   font-weight: 500;
   font-size: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

@@ -28,9 +28,16 @@ header {
 
 #linkButton {
     color: $main-color;
-    text-decoration: none;
     font-weight: 500;
     font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
