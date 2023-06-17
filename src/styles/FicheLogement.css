@@ -170,11 +170,6 @@ h2 {
   position: relative;
 }
 
-.logementSlide {
-  list-style-type: none;
-  position: absolute;
-}
-
 .carrouselImage {
   width: 100%;
   border-radius: 25px;
