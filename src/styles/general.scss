@@ -2,25 +2,27 @@ $main-color: #FF6060;
 $secondary-color: #E3E3E3;
 $main-font: 'Montserrat', sans-serif;
 
+/* Title overlay */
+
 .supperpositionContainer {
     position: relative;
-    display: inline-block;
-    margin-bottom: 223px;
+    height: 223px;
+    width: 100%;
 }
 
 .titleOverlay {
-    width: 100%;
-    height: 111px;
     position: absolute;
+    width: 100%;
+    height: 100%;
     color: white;
     z-index: 1;
     font-weight: 500;
     font-size: 48px;
-    text-align: center;
-    top: 50%;
-    transform: translate(0%, +35%);
-
-}
+    top: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
 .sectionIllustration {
     position: absolute;
@@ -71,6 +73,7 @@ h2 {
     padding-left: 15px;
     padding-right: 20px;
     align-items: center;
+    cursor: pointer;
 }
 
 .dropdownTitle {
@@ -83,7 +86,6 @@ h2 {
     color: white;
     border: none;
     background-color: transparent;
-    cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -152,13 +154,53 @@ h2 {
     list-style: none;
 }
 
+/* Carousel */
+
+#carouselContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3/1;
+}
+
+.carrouselButton {
+    position: absolute;
+    z-index: 1;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: white;
+    border: none;
+    top: 50%;
+    cursor: pointer;
+}
+
+.carrouselButton.previous {
+    left: 2%;
+}
+
+.carrouselButton.next {
+    right: 2%;
+}
+
+.carrouselImage {
+    width: 100%;
+    border-radius: 25px;
+    aspect-ratio: 3/1;
+    object-fit: cover;
+}
+
+.slideNumber {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 90%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
-
-    .supperpositionContainer {
-        margin-bottom: 111px;
-    }
 
     .sectionIllustration {
         height: 111px;

@@ -1,26 +1,21 @@
+/* Title overlay */
 .supperpositionContainer {
   position: relative;
-  display: inline-block;
-  margin-bottom: 223px;
+  height: 223px;
 }
 
 .titleOverlay {
-  width: 100%;
-  height: 111px;
   position: absolute;
   color: white;
   z-index: 1;
   font-weight: 500;
   font-size: 48px;
-  text-align: center;
-  top: 50%;
-  transform: translate(0%, 35%);
+  top: 0;
 }
 
 .sectionIllustration {
   position: absolute;
   width: 100%;
-  height: 223px;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -31,7 +26,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 223px;
   border-radius: 25px;
   opacity: 0.3;
   background-color: black;
@@ -144,11 +138,51 @@ h2 {
   list-style: none;
 }
 
+/* Carousel */
+#carouselContainer {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 3/1;
+}
+
+.carrouselButton {
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  background-color: transparent;
+  color: white;
+  border: none;
+  top: 50%;
+}
+
+.carrouselButton.previous {
+  left: 2%;
+}
+
+.carrouselButton.next {
+  right: 2%;
+}
+
+.carrouselImage {
+  width: 100%;
+  border-radius: 25px;
+  aspect-ratio: 3/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.slideNumber {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 90%;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
-  .supperpositionContainer {
-    margin-bottom: 111px;
-  }
   .sectionIllustration {
     height: 111px;
     border-radius: 10px;

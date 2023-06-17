@@ -10,10 +10,12 @@ export default function Navbar() {
   return (
     <header>
       <div id="headerLogo">
+      <NavLink exact to="/" id="linkButton" activeClassName="activeLink">
         <img src={LetterK} alt="K" className="imageMarginSmall logoNavbarTall" />
         <img src={KasaLogo} alt="A" className="imageMarginTall logoNavbarSmall" />
         <img src={LetterS} alt="S" className="imageMarginTall logoNavbarSmall" />
         <img src={LetterA} alt="A" className="logoNavbarSmall" />
+      </NavLink>
       </div>
       <nav id="navigationButton">
         <div className="linkButtonContainer">

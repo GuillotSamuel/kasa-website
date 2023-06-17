@@ -1,24 +1,5 @@
 @import './general.scss';
 
-.logementCarrousel {
-    width: 100%;
-    aspect-ratio: 3/1;
-    position: relative;
-}
-
-#carouselContainer {
-    width: 100%;
-    aspect-ratio: 3/1;
-    position: relative;
-}
-
-.carrouselImage {
-    width: 100%;
-    border-radius: 25px;
-    aspect-ratio: 3/1;
-    object-fit: cover;
-}
-
 #mainLogementContainer {
     display: flex;
     flex-direction: row;
