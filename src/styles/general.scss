@@ -18,10 +18,10 @@ $main-font: 'Montserrat', sans-serif;
     z-index: 1;
     font-weight: 500;
     font-size: 48px;
-    top: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px 16px;
   }
 
 .sectionIllustration {
@@ -94,8 +94,17 @@ h2 {
     color: $main-color;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    max-height: 0px;
+    overflow: hidden;
+    padding: 0px 20px;
+    transition: max-height 0.15s ease-in-out, padding-top 0.15s ease-in-out, padding-bottom 0.15s ease-in-out ;
+}
+
+.dropdownText.open {
+    max-height: 500px;
     padding: 20px;
 }
+  
 
 .rotate-animation {
     transform: rotate(-180deg);
@@ -200,16 +209,82 @@ h2 {
 
 /* Responsive */
 
+@media (max-width: 1050px) {
+
+    .slideNumber {
+
+        top: 80%;
+
+    }
+
+    .titleOverlay {
+        font-size: 35px;
+    }
+
+}
+
 @media (max-width: 768px) {
 
+    #sloganSection {
+        aspect-ratio: 3 / 1;
+        height: auto;
+    }
+
     .sectionIllustration {
-        height: 111px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 1;
         border-radius: 10px;
     }
 
     .illustrationOverlay {
-        height: 111px;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 1;
         border-radius: 10px;
     }
+
+    .titleOverlay {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 3 / 1;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .slideNumber {
+        display: none;
+    }
+
+    .carrouselImage {
+        width: 100%;
+        aspect-ratio: 335/255;
+    }
+
+    .logementSlide {
+        margin-top: 27px;
+    }
+
+    #mainLogementContainer {
+        margin: 15px 0px;
+        flex-direction: column;
+        width: 100%;
+        gap: 16.5px;
+    }
+
+    #secondLogementContainer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #hostContainer {
+        order: 2;
+    }
+
+    #ratingContainer {
+        order: 1;
+    }
+
 }
 

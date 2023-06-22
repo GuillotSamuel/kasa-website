@@ -16,7 +16,7 @@ export default function Dropdown({ title, text }) {
           <i className="fa-solid fa-angle-right fa-rotate-270 fa-xl"></i>
         </button>
       </div>
-      {isTextVisible && <div className="dropdownText">{text}</div>}
+      <div className={`dropdownText ${isTextVisible ? 'open' : ''}`}>{text}</div>
     </div>
   );
 }
