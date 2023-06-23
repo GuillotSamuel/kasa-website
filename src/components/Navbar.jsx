@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <header>
       <div id="headerLogo">
-      <NavLink exact to="/" id="linkButton" activeClassName="activeLink">
+      <NavLink to="/" id="linkButton" className="activeLink">
         <img src={LetterK} alt="K" className="imageMarginSmall logoNavbarTall" />
         <img src={KasaLogo} alt="A" className="imageMarginTall logoNavbarSmall" />
         <img src={LetterS} alt="S" className="imageMarginTall logoNavbarSmall" />
@@ -19,10 +19,10 @@ export default function Navbar() {
       </div>
       <nav id="navigationButton">
         <div className="linkButtonContainer">
-          <NavLink exact to="/" id="linkButton" activeClassName="activeLink">Accueil</NavLink>
+          <NavLink to="/" id="linkButton" className="activeLink">Accueil</NavLink>
         </div>
         <div className="linkButtonContainer">
-          <NavLink to="/aPropos" id="linkButton" activeClassName="activeLink">A propos</NavLink>
+          <NavLink to="/aPropos" id="linkButton" className="activeLink">A propos</NavLink>
         </div>
       </nav>
     </header>

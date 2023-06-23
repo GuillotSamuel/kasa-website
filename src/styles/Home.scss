@@ -54,11 +54,20 @@
     padding-right: 40%;
 }
 
+.sectionIllustration {
+    height: 223px;
+}
+
+.illustrationOverlay {
+    height: 223px;
+}
+
 @media (max-width: 1200px) {
 
     #logementGrid {
         grid-gap: 30px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -85,6 +94,14 @@
 
 .logementCard {
     aspect-ratio: 4 / 3;
+}
+
+.sectionIllustration {
+    height: auto;
+}
+
+.illustrationOverlay {
+    height: auto;
 }
 
 }

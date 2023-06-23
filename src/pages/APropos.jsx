@@ -23,6 +23,7 @@ export default function APropos() {
     <main>
       <section id="imageSection" className="supperpositionContainer">
         <img src={Mountains} alt="Mountains landscape" className="sectionIllustration" />
+        <div className="illustrationOverlay"></div>
       </section>
       <div id="aProposSection">
         <Dropdown title="Fiabilité" text="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."/>

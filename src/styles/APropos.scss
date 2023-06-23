@@ -13,6 +13,14 @@
     width: 100%;
 }
 
+.sectionIllustration {
+    height: 223px;
+}
+
+.illustrationOverlay {
+    height: 223px;
+}
+
 .dropdownContainer {
     width: 100%;
 }
@@ -30,4 +38,13 @@
         margin-top: 19px;
         margin-bottom: 19px;
     }
+
+    .sectionIllustration {
+        height: 100%;
+    }
+
+    .illustrationOverlay {
+        height: 100%;
+    }
+
 }

@@ -22,7 +22,6 @@
 .sectionIllustration {
   position: absolute;
   width: 100%;
-  height: 223px;
   border-radius: 25px;
   -o-object-fit: cover;
      object-fit: cover;
@@ -33,7 +32,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 223px;
   border-radius: 25px;
   opacity: 0.3;
   background-color: black;
@@ -214,13 +212,11 @@ h2 {
   }
   .sectionIllustration {
     width: 100%;
-    height: auto;
     aspect-ratio: 3/1;
     border-radius: 10px;
   }
   .illustrationOverlay {
     width: 100%;
-    height: auto;
     aspect-ratio: 3/1;
     border-radius: 10px;
   }
@@ -257,6 +253,16 @@ h2 {
   }
   #ratingContainer {
     order: 1;
+  }
+  /* Dropdown */
+  .dropdownBar {
+    height: 30px;
+  }
+  .dropdownTitle {
+    font-size: 13px;
+  }
+  .dropdownText {
+    font-size: 12px;
   }
 }
 #sloganSection {
@@ -313,6 +319,14 @@ h2 {
   padding-right: 40%;
 }
 
+.sectionIllustration {
+  height: 223px;
+}
+
+.illustrationOverlay {
+  height: 223px;
+}
+
 @media (max-width: 1200px) {
   #logementGrid {
     grid-gap: 30px;
@@ -337,5 +351,11 @@ h2 {
   }
   .logementCard {
     aspect-ratio: 4/3;
+  }
+  .sectionIllustration {
+    height: auto;
+  }
+  .illustrationOverlay {
+    height: auto;
   }
 }/*# sourceMappingURL=Home.css.map */

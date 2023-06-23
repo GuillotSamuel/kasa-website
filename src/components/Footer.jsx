@@ -10,7 +10,7 @@ export default function Footer() {
   return (
     <footer>
       <div id="footerLogo">
-        <NavLink exact to="/" id="linkButton" activeClassName="activeLink">
+        <NavLink to="/" id="linkButton" className="activeLink">
           <img src={LetterK} alt="K" />
           <img src={KasaLogo} alt="A" />
           <img src={LetterS} alt="S" />
