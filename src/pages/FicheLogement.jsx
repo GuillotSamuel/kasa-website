@@ -14,7 +14,7 @@ export default function FicheLogement() {
 let { id } = useParams();
 const logementId = id;
 /* Récupération des données dans le JSON */
-const logementTrouve = Logements.find(obj => obj.id === logementId);
+const logementTrouve = Logements.find(obj => obj.id === logementId); 
 const hostTrouve = logementTrouve.host;
 
 return (
